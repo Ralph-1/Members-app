@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PostsController < ApplicationController
   before_action :authenticate_user!, only: %i[new create]
 
@@ -5,7 +7,7 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def new 
+  def new
     @post = Post.new
   end
 
