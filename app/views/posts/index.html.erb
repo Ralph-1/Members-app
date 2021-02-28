@@ -1,16 +1,17 @@
-<main class="d-flex flex-items-center flex-justify-center">
-  <h1>All posts</h1><br />
-  <div style="max-width: 600px;" >
-    <% @posts.each do |post| %>
-      <article class="markdown-body mt-7">
-        <h2 class="d-flex flex-items-center flex-justify-between">
-          <%= post.title %>
-          <% if user_signed_in? %>
-            <span class="f5 text-normal">Written by <span><%= post.user.name %></span></span>
-          <% end %>
-        </h2>
-        <p><%= post.body %></p>
-      </article>
-    <% end %>
+<main class="">
+  <h1>All posts</h1><br/>
+    <div class="jumbotron p-4">
+       <% @posts.each do |post| %>
+          <article>
+           <p class="h3"><%= post.title %></p>
+            <% if user_signed_in? %>
+              <small class="lead">Written by <small><%= post.user.name %></small></small>
+            <% end %>
+            <hr class="my-4">
+              <p class="lead"><%= post.body %></p>
+          </article><br/><br/>
+        <% end %>
+    </div>
+    
   </div>
 </main>
