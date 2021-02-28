@@ -9,7 +9,7 @@
 
 ## Getting started
 
-- Clone the repo ``
+- Clone the repo `https://github.com/Ralph-1/Members-app.git`
 - `cd` into the project
 - `git checkout  members-app`
 - `bundle install`
