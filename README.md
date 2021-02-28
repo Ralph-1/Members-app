@@ -1,24 +1,34 @@
-# README
+> A simple ruby on rails app where registered users can create posts.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
 
-Things you may want to cover:
+- Sign in and sign up
+- Signed in users can create posts
+- Users can see all the posts
+- Post author names are hidden for guest users
 
-* Ruby version
+## Getting started
 
-* System dependencies
+- Clone the repo ``
+- `cd` into the project
+- `git checkout  members-app`
+- `bundle install`
+- Run `rails db:create db:migrate`
+- Run `rails s`
+- Visit `localhost:3000`
 
-* Configuration
+## Built with
 
-* Database creation
+- Ruby on rails
 
-* Database initialization
+## Author
 
-* How to run the test suite
+### Ralph Oburu
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: [@Ralph-1](https://github.com/ralph-1)
+- Twitter: [NotRalph0] (https://twitter.com/NotRalph0)
+- LinkedIn: [Abeid Ahmed](https://www.linkedin.com/in/ralph-oburu/)
 
-* Deployment instructions
+## License
 
-* ...
+[MIT](https://github.com/abeidahmed/tic-tac-toe/blob/development/LICENSE) licensed software.
