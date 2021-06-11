@@ -1,0 +1,17 @@
+<main class="">
+  <h1>All posts</h1><br/>
+    <div class="jumbotron p-4">
+       <% @posts.each do |post| %>
+          <article>
+           <p class="h3"><%= post.title %></p>
+            <% if user_signed_in? %>
+              <small class="lead">Written by <small><%= post.user.name %></small></small>
+            <% end %>
+            <hr class="my-4">
+              <p class="lead"><%= post.body %></p>
+          </article><br/><br/>
+        <% end %>
+    </div>
+    
+  </div>
+</main>

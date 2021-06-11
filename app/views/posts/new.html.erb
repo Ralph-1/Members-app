@@ -1,0 +1,24 @@
+<main class="d-flex flex-items-center flex-justify-center">
+  <div class="width-full" style="max-width: 400px">
+    <h2>Create a new post</h2>
+    <%= form_with model: @post do |form| %>
+      <div class="form-group">
+        <div class="form-group-body">
+          <%= form.text_field :title, class: "form-control", autocomplete: "off", autofocus: true, placeholder: 'Title' %>
+          <p class="mt-1 text-red h5"><%= @post.errors.full_messages_for(:title).first %></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-group-header">
+          <%= form.label :body %>
+        </div>
+        <div class="form-group-body">
+          <%= form.text_area :body, class: "form-control", autocomplete: "off" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= form.submit "Create post", class: "btn btn-primary btn-block" %>
+      </div>
+    <% end %>
+  </div>
+</main>
